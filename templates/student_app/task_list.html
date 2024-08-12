@@ -7,6 +7,16 @@
    <a href="{% url 'login' %}">Login</a>
 {% endif %}
 
+{% if messages %}
+  <div>
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
 <hr>
 <h1>My TO DO List {{color}}</h1>
 <a href="{% url 'task-create' %}">Add Task</a>
@@ -27,7 +37,6 @@
         {% for task in tasks %}
         <tr>
             <td>{{task.title}}</td>
-            <td><a href="{% url 'task' task.id %}">View</a></td>
             <td><a href="{% url 'task-update' task.id %}">Edit</a></td>
             <td><a href="{% url 'task-delete' task.id %}">Delete</a></td>
         </tr>

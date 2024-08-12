@@ -8,6 +8,8 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from django.contrib import messages
+
 from .models import Task
 
 class CustomLoginView(LoginView):
@@ -70,6 +72,7 @@ class TaskCreate(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, "Task successfully added!")
         return super(TaskCreate, self).form_valid(form)
     def get_queryset(self):
         return Task.objects.filter(user=self.request.user)
@@ -88,3 +91,6 @@ class TaskDelete(LoginRequiredMixin, DeleteView):
     success_url = reverse_lazy('tasks')
     def get_queryset(self):
         return Task.objects.filter(user=self.request.user)
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, "Task successfully deleted!")
+        return super(TaskDelete, self).delete(request, *args, **kwargs)
