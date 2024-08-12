@@ -30,7 +30,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-# DEBUG = 'DEVELOPMENT'
 
 ALLOWED_HOSTS = ['.gitpod.io', 'https://8000-sashacreate-citodoproje-3z3dwm1kagt.ws-eu115.gitpod.io', '.herokuapp.com']
 
@@ -138,6 +137,8 @@ LOGIN_URL = 'login'
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR,'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
