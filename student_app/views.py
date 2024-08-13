@@ -39,7 +39,7 @@ class RegisterPage(FormView):
 
 
 class TaskList(LoginRequiredMixin, ListView):
-    #modal = Task
+    modal = Task
     template_name = 'task_list.html'
     context_object_name = 'tasks'
     def get_context_data(self, **kwargs):
@@ -59,7 +59,7 @@ class TaskList(LoginRequiredMixin, ListView):
 class TaskDetail(LoginRequiredMixin, DetailView):
     template_name = 'student_app/task_detail.html'
     context_object_name = 'task'
-    #modal = Task
+    modal = Task
     
     def get_object(self):
         return get_object_or_404(Task, pk=self.kwargs['pk'], user=self.request.user)
