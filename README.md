@@ -32,12 +32,21 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## Features implemented
 
- - **Add Tasks:** Students can create new tasks, specifying the task's name, description, and due date.
+- **Login Page:**
+  - Secure signup functionality allows users to register securely.
+  - Successful login redirects users to the task/home page.
+- **Registration Page:**
+  - Secure login functionality allows users to log in securely.
+  - Successful registration redirects users to the task/home page.
+- **Logout Page:**
+  - Logout functionality allows users to sign out securely.
+  - After successful logout, users are redirected to the task/home page.
+ - **Add Tasks:** Students can create new tasks, specifying the task's name, description.
 - **View Tasks:** Tasks are displayed in a list format, showing essential details like the task's name and status.
 - **Update Tasks:** Students can update existing tasks, modifying any of the details.
 - **Delete Tasks:** Students can remove tasks that are no longer needed.
 - **Task Status:** Tasks can be marked as complete or incomplete.
-- **Responsive Design:** The app is designed to work well on both desktop and mobile devices.
+- **Responsive Design:** The app is designed to work well on desktop/tablet/mobile devices.
 
 ![desktop](static/images/IMG_9457.jpg)
 
