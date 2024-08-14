@@ -96,6 +96,8 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## Bugs
 
+ The issues specifically with CSS, HTML, and notifications during login/logout. 
+
  ## Deployment
 
 - Gunicorn: A Python WSGI HTTP Server for UNIX. It’s used to serve your Django application.
@@ -106,4 +108,21 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## Resources
 
+- [Code Institute Full Stack Development course materials](https://codeinstitute.net/) 
+- [Django docs](https://www.djangoproject.com/)
+- [Bootstrap docs](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [Stack overflow](https://stackoverflow.com/)
+- [Dev Community](https://dev.to/)
+- [Code Institude Slack](https://slack.com/)
+- [W3school](https://www.w3schools.com/)
+- [MDN](https://developer.mozilla.org/en-US/)
+- [Figma](https://www.figma.com/)
+- [TinyPNG](https://tinypng.com/)
+
  ## Credits and acknowledgements
+
+- Bootcamps Lead **David Calikes** for his support and guidance during the process
+- Course Facilitator **Alexander Tastad** for his help, support and guidance during the process 
+- Tutor **Martin McInerney** for his endless patience and support with trouble shooting issues
+- Tutor **Kevin Loughrey** for his helpful SME sessions and constant support
+- My fellow **cohort peers** for their support, help with trouble shooting issues and sharing the experience
