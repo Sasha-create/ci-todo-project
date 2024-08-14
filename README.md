@@ -28,6 +28,8 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## Agile Development
 
+**[Link to Kanban board](https://github.com/users/Sasha-create/projects/4)**  
+
  ![desktop](static/images/IMG_9462.PNG)
 
  ## Features implemented
@@ -70,6 +72,28 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## Testing
 
+ #### Account Registration Tests
+
+| Test |Result  |
+|--|--|
+| User can create profile | Pass |
+| User can log into profile | Pass |
+| User can log out of profile | Pass |
+| Messages are displaying | Pass |
+
+#### CRUD Tests
+
+| Test |Result  |
+|--|--|
+|User can create a task | Pass |
+|User can update a task | Pass |
+|User can delete a task | Pass |
+|User can read a task | Pass |
+
+#### Google Chrome testing with Lighthouse
+
+![desktop](static/images/IMG_9467.jpg)
+
  ## Bugs
 
  ## Deployment
@@ -77,6 +101,8 @@ This is a Django-based web application for managing a student's to-do list. The 
 - Gunicorn: A Python WSGI HTTP Server for UNIX. It’s used to serve your Django application.
 
 - Heroku: cloud platforms for deployment.
+
+**[Link to Live Page](https://todo-student-app-3d1d2caae814.herokuapp.com/login/)**
 
  ## Resources
 
