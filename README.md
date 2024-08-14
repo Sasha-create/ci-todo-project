@@ -21,7 +21,7 @@ This is a Django-based web application for managing a student's to-do list. The 
 
  ## UX/UI Design
 
- The design of the Weather Web App was crafted using Figma, focusing on a user-friendly interface and seamless user experience. The clean and intuitive design helps users quickly find the information they need.
+ The design of the TODO-students-app was crafted using Figma, focusing on a user-friendly interface and seamless user experience. The clean and intuitive design helps users quickly find the information they need.
 
 ![desktop](static/images/IMG_9463.jpg)
 ![desktop](static/images/IMG_9464.PNG)
